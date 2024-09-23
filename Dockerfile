@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENV MONGODB_URI = "mongodb+srv://rophenp:Pwmd2KDWfGGPxbYD@my-rotten-tomatoes.70afw.mongodb.net/?retryWrites=true&w=majority&appName=my-rotten-tomatoes"
+ENV MONGODB_URI=mongodb+srv://rophenp:Pwmd2KDWfGGPxbYD@my-rotten-tomatoes.70afw.mongodb.net/?retryWrites=true&w=majority&appName=my-rotten-tomatoes
 ENV NEXTAUTH_URL=http://localhost:3000
 ENV NEXTAUTH_SECRET="Lp+6M6rft/wB1xaouLJ0qQ0lr+19OKPiisinn0i1BiI="
 
